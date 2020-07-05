@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: arial;
+}
+
+body {
+    background-image: url('soldier.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.result {
+    font-size: 20px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+div.board {
+    display: none;
+    width: 300px;
+    height: 500px;
+    border: 2px solid black;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(yellow, orange 35%);
+    z-index: 2;
+}
+
+div.modal-wrap {
+    width: 300px;
+    height: 500px;
+    /* border: 2px solid black; */
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* background: linear-gradient(yellow, orange 35%); */
+    text-align: center;
+    z-index: 3;
+}
+
+div.shooter {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    left: 140px;
+    top: 470px;
+}
+
+div.enemy {
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    position: absolute;
+
+}
+
+div.over {
+    background-color: white;
+}
+
+.bullet {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+    top: 470px;
+    border-radius: 50%;
+}
+
+aside {
+    position: absolute;
+    left: 70%;
+    top: 50%;
+    font-size: 30px;
+}
+
+aside p.timer {
+    display: block;
+    margin-bottom: 15px;
+}
+
+aside p.result {
+    display: block;
+    margin-bottom: 15px;
+}
+
+div.modal {
+    border: 2px solid white;
+    width: 80%;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(orange 25%, yellow);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    padding: 10px;
+}
+
+button.newGame {
+    width: 80%;
+    font-size: 20px;
+}
+
+input.name {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+div.lastResults {
+    position: fixed;
+    left: 10%;
+    top: 30%;
+    width: 20%;
+    min-height: 40vh;
+    color: white;
+    font-size: 25px;
+}
+
+div.lastResult div {
+    margin-top: 5px;
+    font-size: 22px;
+}
